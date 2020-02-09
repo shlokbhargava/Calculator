@@ -46,3 +46,9 @@
     color: black;
     text-align: center;
 }
+
+@media(max-width: 800px){
+    #calculator-box{
+        width: 100%;
+    }
+}
