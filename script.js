@@ -12,7 +12,9 @@ for(var i = 0; i<keypad.length; i++){
         if(flag === 1){    // to display the operator
             display.innerText = '';
             flag = 0;
+
         }
+        
         var value = this.getAttribute('data-value');
         
         if(value == '/' || value == '*' || value == '-' || value == '+'){
@@ -38,28 +40,14 @@ for(var i = 0; i<keypad.length; i++){
             operand2 = parseFloat(display.textContent);
             display.innerText = '';
 
-            if(operator == '/'){
-                if(operand2 == '0'){
-                    display.innerText = "Error";
-                }  
-                else{
-                    var result = operand1 / operand2;
-                    display.innerText = result;
-                }
+            if(operator == '/' && operand2 == '0'){
+                display.innerText = "Error";  
             }
-            else if(operator == '+'){
-                var result = operand1 + operand2;
-                display.innerText = result;
-            }
-            else if(operator == '-'){
+            else if(operator == '/' || operator == '*' || operator == '-' || operator == '+'){
                 var result = eval(operand1 + " " + operator + " " + operand2);
                 display.innerText = result;
-            }
-            else if(operator == '*'){
-                var result = operand1 * operand2;
-                display.innerText = result;
-            }
-        
+            }  
+                
         }
 
         else if(value == '%'){

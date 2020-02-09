@@ -47,8 +47,62 @@
     text-align: center;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1024px){
     #calculator-box{
-        width: 100%;
+        width: 55%;
+        right: 15%;
+    }
+    .keypad{
+        padding-top: 0%;
+        margin-top: 18%;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 900px){
+    #calculator-box{
+        width: 80%;
+        right: 24%;
+    }
+    .keypad{
+        padding-top: 0%;
+        margin-top: 18%;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 840px){
+    #calculator-box{
+        width: 85%;
+        right: 28%;
+    }
+    .keypad{
+        margin-top: 3%;
+        font-size: 1.3rem;
+        color: black;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 500px){
+    #calculator-box{
+        width: 90%;
+        right: 30%;
+    }
+    .keypad{
+        padding-top: 0%;
+        margin-top: 18%;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
     }
 }
+
+
