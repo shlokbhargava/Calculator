@@ -1,0 +1,25 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shlokbhargava/calculator.git"
+  },
+  "keywords": [
+    "Calculator"
+  ],
+  "author": "shlok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shlokbhargava/calculator/issues"
+  },
+  "homepage": "https://shlokbhargava.github.io/Calculator",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
